@@ -1,0 +1,52 @@
+:root {
+    --violet: #9532aa;
+    --yellow: #ECB602;
+    --gradient: linear-gradient(60deg, var(--yellow), var(--violet));
+  }
+  
+.accordion {
+    padding: 10px 20px;
+    width: 55%;
+    margin: auto;
+}
+
+@media (max-width : 768px) {
+    .accordion {
+        width: 90%;
+    }
+}
+
+.accordion-items {
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.accordion-items h2 {
+    text-transform: none;
+    font-weight: 400;
+}
+
+.accordion-items p {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.accordion-title {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.accordion-title:hover {
+    background: var(--gradient);
+}
+
+.accordion-items.active .accordion-content {
+    display: block;
+}
+
+.accordion-content {
+    padding: 5px;
+    display: none;
+}
